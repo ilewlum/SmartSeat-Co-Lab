@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from "./components/Layout";
 import SmartAllocationDashboard from "./pages/SmartAllocationDashboard";
 import ParticipantsPage from "./pages/ParticipantsPage";
 import SessionsPage from "./pages/SessionsPage";
@@ -22,8 +21,22 @@ export default function App() {
   };
 
   return (
-    <Layout setPage={setPage}>
-      {renderPage()}
-    </Layout>
+    <div className="flex min-h-screen">
+
+      {/* Sidebar */}
+      <div className="w-64 bg-white border-r p-6 space-y-4">
+        <h2 className="text-xl font-semibold">Smart Allocation</h2>
+
+        <button onClick={() => setPage("dashboard")}>Dashboard</button>
+        <button onClick={() => setPage("participants")}>Participants</button>
+        <button onClick={() => setPage("sessions")}>Sessions</button>
+        <button onClick={() => setPage("analytics")}>Analytics</button>
+      </div>
+
+      {/* Content */}
+      <div className="flex-1 p-8">
+        {renderPage()}
+      </div>
+    </div>
   );
 }
