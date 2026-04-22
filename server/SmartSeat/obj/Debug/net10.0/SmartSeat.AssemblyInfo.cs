@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartSeat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e619b23cc2dcfddec4a8135b2fdfcb1e545697e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52e558318a88cec65db93bc677a9920bac3939b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartSeat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartSeat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
