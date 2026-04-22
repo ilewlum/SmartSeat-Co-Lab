@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\server",
+    "\\server\\SmartSeat",
+    "\\server\\SmartSeat\\Controllers",
+    "\\server\\SmartSeat\\Models",
+    "\\server\\SmartSeat\\Repositories"
+  ],
+  "SelectedNode": "\\server\\SmartSeat\\Controllers\\AllocationsController.cs",
+  "PreviewInSolutionExplorer": false
+}
