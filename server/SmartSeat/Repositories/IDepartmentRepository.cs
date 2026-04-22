@@ -3,10 +3,10 @@ namespace SmartSeat.Repository;
 
 public interface IDepartmentRepository
 {
-    Task<Session>  GetDepartmentByIdAsync( Guid departmentId);
-    Task<IEnumerable<Session>> GetAllDepartmentsAsync();
+    Task<Department>  GetDepartmentByIdAsync( string departmentId);
+    Task<IEnumerable<Department>> GetAllDepartmentsAsync();
     
-    Task<Participant> CreateAsync(Department department);
-    Task<Participant> UpdateAsync(Guid departmentId, Department department);
-    Task<bool> DeleteAsync(Guid departmentId);
+    Task<Department> CreateAsync(Department department);
+    Task<Department> UpdateAsync(string departmentId, Department department);
+    Task<bool> DeleteAsync(string departmentId);
 }

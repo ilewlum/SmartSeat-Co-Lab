@@ -3,12 +3,12 @@ namespace SmartSeat.Repositories;
 
 public interface ISessiontRepository
 {
-    Task<Session>  GetSessionByIdAsync( Guid sessionId);
-    Task<IEnumerable<Session>> GetSessionsByDepartmentAsync(Guid departmentId);
+    Task<Session>  GetSessionByIdAsync( string sessionId);
+    Task<IEnumerable<Session>> GetSessionsByDepartmentAsync(string departmentId);
     Task<IEnumerable<Session>> GetAllSessionsAsync();
-    Task<IEnumerable<Session>> GetSessionsByParticipantAsync(Guid participantId);
+    Task<IEnumerable<Session>> GetSessionsByParticipantAsync(string participantId);
     
-    Task<Participant> CreateAsync(Participant participant);
-    Task<Participant> UpdateAsync(Guid id, Participant participant);
-    Task<bool> DeleteAsync(Guid participantId);
+    Task<Session> CreateAsync(Session session);
+    Task<Session> UpdateAsync(string sessionId, Session session);
+    Task<bool> DeleteAsync(string participantId);
 }
