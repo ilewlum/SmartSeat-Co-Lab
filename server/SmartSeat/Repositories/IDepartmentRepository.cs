@@ -1,5 +1,5 @@
 using SmartSeat.Models;
-namespace SmartSeat.Repository;
+namespace SmartSeat.Repositories;
 
 public interface IDepartmentRepository
 {
